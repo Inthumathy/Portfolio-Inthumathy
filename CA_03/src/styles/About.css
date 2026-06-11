@@ -1,0 +1,28 @@
+.about{
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+}
+
+.about h1{
+    text-align:center;
+    color:#0f172a;
+    margin-bottom:30px;
+}
+
+.about h2{
+    color:#2563eb;
+    margin-top:25px;
+}
+
+.about p{
+    line-height:1.8;
+}
+
+.about ul{
+    padding-left:20px;
+}
+
+.about li{
+    margin-bottom:10px;
+}
