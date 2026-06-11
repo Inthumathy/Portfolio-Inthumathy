@@ -1,9 +1,14 @@
+// 1. MAKE SURE THIS IMPORT IS HERE TO LOAD YOUR CSS STYLES!
+import "../styles/Home.css"; 
+
 function Skills() {
   return (
     <section className="skills-section">
       <h1 className="section-title">My Skills</h1>
 
+      {/* This grid container breaks things into two side-by-side columns */}
       <div className="skills-grid">
+        
         {/* Left Column: Tech Stack */}
         <div className="skills-column">
           <h2>Development & Databases</h2>
@@ -101,6 +106,7 @@ function Skills() {
             <progress value="65" max="100"></progress>
           </div>
         </div>
+
       </div>
     </section>
   );
