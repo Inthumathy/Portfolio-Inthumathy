@@ -1,0 +1,45 @@
+/* ==========================================================================
+   👤 THEMED ABOUT PAGE STYLES
+   ========================================================================== */
+
+.about {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    /* Ensures the component inherits the global page transition */
+    transition: color 0.3s ease;
+}
+
+.about h1 {
+    text-align: center;
+    /* CHANGED: Dynamically updates text color for light/dark visibility */
+    color: var(--text-main);
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.about h2 {
+    /* CHANGED: Uses theme blue accent variable for crisp contrast */
+    color: var(--accent-blue);
+    margin-top: 25px;
+    transition: color 0.3s ease;
+}
+
+.about p {
+    line-height: 1.8;
+    /* CHANGED: Uses muted text variable for smooth reading hierarchy */
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.about ul {
+    padding-left: 20px;
+}
+
+.about li {
+    margin-bottom: 10px;
+    /* CHANGED: Bullet items follow the default body text theme color */
+    color: var(--text-main);
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
