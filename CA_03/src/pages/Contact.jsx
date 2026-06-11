@@ -4,7 +4,6 @@ import ContactForm from "../components/ContactForm";
 function Contact() {
   return (
     <div className="contact">
-
       <h1>Contact Me</h1>
 
       <p>
@@ -12,8 +11,8 @@ function Contact() {
         projects, or collaborations.
       </p>
 
+      {/* Renders your modular, functional feedback form */}
       <ContactForm />
-
     </div>
   );
 }

@@ -1,37 +1,123 @@
-.contact{
-    max-width:700px;
-    margin:auto;
-    padding:40px;
+/* Container for the entire page section */
+.contact {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
-.contact h1{
-    text-align:center;
-    margin-bottom:20px;
+/* Main title styling */
+.contact h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #0f172a;
+    margin-bottom: 8px;
 }
 
-.contact form{
-    display:flex;
-    flex-direction:column;
+/* Descriptive paragraph text */
+.contact p {
+    text-align: center;
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
 }
 
+/* Flexbox layout to stack form groups nicely */
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper for individual input sections */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Styles form labels perfectly above inputs */
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Clean, modern styling for your inputs & textarea */
 .contact input,
-.contact textarea{
-    padding:12px;
-    margin-bottom:15px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-size:16px;
+.contact textarea {
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #0f172a;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    box-sizing: border-box; /* Prevents text elements from popping outside boxes */
 }
 
-.contact button{
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:12px;
-    border-radius:8px;
-    cursor:pointer;
+/* Interactive focus glow effect matching your theme color */
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
-.contact button:hover{
-    background:#1d4ed8;
+/* Professional blue action button styling */
+.contact button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+/* Hover state changes color smoothly */
+.contact button:hover {
+    background: #1d4ed8;
+}
+
+/* Active state creates a subtle physical press feedback */
+.contact button:active {
+    transform: scale(0.99);
+}
+
+/* Disabled state when sending the email */
+.contact button:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+}
+
+/* Beautiful dynamic notification alert banners */
+.alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.success-alert {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+.error-alert {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
 }
