@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section className="hero">
       <img 
-        src="/profile1.jpeg" 
+        src="/myphoto.png" 
         alt="Inthumathy's Profile Photo" 
         className="profile-photo"
       />
